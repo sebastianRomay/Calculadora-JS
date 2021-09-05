@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <title>App Calculadora</title>
+    <style>
+        body{
+            background: rgb(182,37,0);
+background: linear-gradient(90deg, rgba(182,37,0,1) 0%, rgba(0,0,0,1) 94%);
+        }
+    </style>
+  </head>
+  <body>
+    <div class="container col-12 row">
+            <h1 class="text-center text-white">Calculadora</h1>
+            <div>
+              <form id="forma">
+          <div class="mb-3">
+              <label for="operandoA"></label>
+              <input type="number" class="form-control" placeholder="Escribe operando A" id="operandoA">
+          <div class="mb-3">
+              <label for="operandoB"></label>
+              <input type="number" class="form-control" id="operandoB" placeholder="Escribe operando B">
+          </div>
+        </form>
+    </div>
+        <div>
+      <button type="submit" class="btn btn-danger m-2" id="boton">Sumar</button>
+      <button type="submit" class="btn btn-success m-2" id="boton2">Restar</button>
+      <button type="submit" class="btn btn-dark m-2" id="boton3">Multiplicar</button>
+      <button type="submit" class="btn btn-primary m-2" id="boton4">Dividir</button>
+      </div>
+      <div id="resultado" class="text-white lead text-center">
+</div>
+    <script defer src="./index.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
